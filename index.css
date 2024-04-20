@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Shimmer Effect */
+.shimmerContainer{
+    display: flex;
+    flex-direction: column;
+}
+#shimmerHader{
+    height: 17vh;
+    background-color: rgb(234, 233, 233);
+    box-shadow: 1px 1px 3px rgb(220, 219, 219),-2px -2px 3px rgb(225, 225, 225);
+    border: 1px solid rgb(223, 222, 222);
+}
+
+#shimmerCards{
+    width: 88vw;
+    margin: 8vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+.shimmerCard{
+    height: 10rem;
+    background-color: rgb(234, 233, 233);
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgb(220, 219, 219),-2px -2px 3px rgb(225, 225, 225);
+    border: 1px solid rgb(223, 222, 222);
+}
+/*Header Part*/
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1000;
+    height: 16vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fffff9 ;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 1px 6px rgb(182, 177, 177);
+}
+
+#navbar{
+    display: flex;
+    margin-right: 1rem;
+    padding: 5px;
+}
+#navbar > ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.li{
+    display: flex;
+    /* align-items: center; */
+    gap: 0.6rem; 
+}
+.li > a{
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+.li > a >img{
+    height: 1.4rem; 
+}
+.li:hover{
+    transform: perspective(15px) translateZ(1px);
+    cursor: pointer;
+    transition: all .2s;
+}
+.li >a >img:hover{
+    color: orange;
+}
+#offer >a> span >sup{
+  color: orange;
+}
+/*logo*/
+#logo-cotain{
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    gap: 1.3em; */
+}
+#swiggylogo{
+    height: 100%;
+    width: fit-content;
+}
+#swiggylogo:hover{
+    transform: perspective(15px) translateZ(-1px);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+/*Main Part*/
+#mainComponent
+{
+    width: 88vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18vh;
+}
+/*column-1 : what in mind*/
+#read-mind{
+    border-bottom: solid 1.5px rgb(208, 199, 199);
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    width: 100%;
+    padding: 1.5% 0;
+    height: 58vh;
+}
+#read-mind > span{
+        font-family:  sans-serif;
+        font-size: x-large;
+        font-weight: 800;
+}
+#read-mind-card
+{
+    /* overflow : scroll; */
+    overflow-y: hidden;
+    display: flex;
+    height: 38vh;
+    gap: 0.8em;
+    margin-top: 1.2rem;
+}
+#read-mind-card::-webkit-scrollbar
+{
+    display: none;
+}
+.cards > img{
+    height: 35vh;
+    cursor: pointer;
+} 
+
+/*column-2 : Top Restaurant*/
+
+#topRestro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+    width: 100%;
+    margin: 10px auto;
+}
+#topRestro > span{
+    font-family:  sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+}
+#topRestroList
+{
+    padding: 5px 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+    padding-top: 2rem;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-auto-rows: 0.2fr;
+} 
+.topRestroCard
+{
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14rem;
+    /* width:18rem; */
+    background-color:#fbfbf8 ;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgb(227, 223, 223),-2px -2px 5px rgb(227, 223, 223);
+    margin: 0.5rem 3px;
+}
+.topRestroCard:hover{
+    cursor: pointer;;
+    transform:perspective(15px) translateZ(-1px);
+    transition: all .2s;
+}
+.topRestroImg
+{
+    width: 100%;
+    height: 60%;
+    position: relative; 
+}
+.topRestroImg > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.topRestroImg > span{
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    color: white;
+    font-family:  sans-serif;
+    font-size: large;
+    font-weight: 900;
+    text-shadow: 1px 1.5px black;
+    word-spacing: 1px;
+} 
+.topRestroInfo
+{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
+.topRestroInfo > span {
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  color: rgb(66, 51, 51);
+}
+.topRestroInfo > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    font-family: "Nunito";
+    font-weight: 500;
+}
+.topRestroInfo > #cuisines{
+    max-height: 40%;
+    font-family:"Nunito";
+    font-size: 0.7rem;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap:wrap;
+}
+
+/*column-3 : Restaurant Online Delivery*/
+#restroOnline{
+    border-top: 1px solid;
+    height: fit-content;
+    padding: 0.8rem 0;
+    width: 100%;
+    margin-top: 1rem;
+    font-family:  sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    border-top: solid 1.5px rgb(208, 199, 199);
+
+}
+/*column-4 : useless feature*/
+
+/*column-5 : All Restaurant*/
+
+#restroList
+{
+    margin-top: 2rem;
+    gap: 2.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-auto-rows: 0.2fr;
+   padding-top: 2rem;
+} 
+.restroCard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15rem;
+    width:13rem;
+    background-color:#fbfbf8 ;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgb(227, 223, 223),-2px -2px 5px rgb(227, 223, 223);
+    margin: 0.6rem 0;
+}
+.restroCard:hover{
+    cursor: pointer;;
+    transform:perspective(15px) translateZ(-1px);
+    transition: all .2s;
+}
+.restroImg
+{
+    width: 100%;
+    height: 60%;
+    position: relative; 
+}
+.restroImg > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.restroImg > span{
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    color: white;
+    font-family:  sans-serif;
+    font-size: large;
+    font-weight: 900;
+    text-shadow: 1px 1.5px black;
+    word-spacing: 1px;
+} 
+.restroInfo
+{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
+.restroInfo > span {
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  color: rgb(66, 51, 51);
+}
+.restroInfo > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    font-family: "Nunito";
+    font-weight: 500;
+}
+.restroInfo > #cuisines{
+    max-height: 40%;
+    font-family:"Nunito";
+    font-size: small;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap:nowrap;
+}
+
+#col1-allRestros{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+margin-top: 15vh;
+padding: 2rem;
+}
+#col1-allRestros-Details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+#col1-restros-title
+{
+    font-family:  sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+}
+#col1-restros-desc{
+    font-family:"Nunito";
+    font-size: large;
+    font-weight: 400;
+    color: rgb(58, 45, 45);
+}

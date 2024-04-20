@@ -1,0 +1,10 @@
+-----> for UI(Hero page)
+https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2599333&lng=77.412615&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
+
+
+-----> for--column 1(what looking for --- Collection)
+https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2599333&lng=77.412615&collection=83644&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null
+
+-----> for--column-2 & column-5 (Restaurant Details) 
+
+https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.2599333&lng=77.412615&restaurantId=695745&catalog_qa=undefined&isMenuUx4=true&submitAction=ENTER
